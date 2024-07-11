@@ -1,0 +1,43 @@
+services:
+  - type: web
+    name: Ethix-MDv1
+    env: node
+    branch: main
+    repo: https://github.com/Piku090909/Ethix-MDv1
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    autoDeploy: false
+    envVars:
+      - key: SESSION_ID
+        sync: Ethix-MD&p5xS36bz
+      - key: DATABASE_URL
+        sync: https://github.com/Piku090909/Ethix-MDv1
+      - key: AUTO_STATUS_SEEN
+        sync: true
+      - key: AUTO_DL
+        sunc: true
+      - key: AUTO_READ
+        sunc: true
+      - key: AUTO_TYPING
+        sunc: true
+      - key: AUTO_RECORDING
+        sunc: false
+      - key: ALWAYS_ONLINE
+        sunc: true
+      - key: AUTO_REACT
+        sunc: false
+      - key: AUTO_BLOCK
+        sunc: false
+      - key: REJECT_CALL
+        sunc: false
+      - key: NOT_ALLOW
+        sunc: true
+      - key: MODE
+        sunc: "privet",
+      - key: OWNER_NAME
+        sunc: "𝛥𝐿𝛯𝛸 𝛲𝛪𝛫𝑈",
+      - key: OWNER_NUMBER
+        sunc:  "918536881026",
+      - key: WELCOME
+        sunc: false
